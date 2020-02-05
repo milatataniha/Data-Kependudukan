@@ -66,7 +66,12 @@ $row=mysqli_fetch_assoc($data);
 	<tr>
 		<td>Golongan </td>
 		<td> </td>
-		<td><input type="text" class="form-control" name="golongan" required="required" value="<?php echo $row['golongan'];?>"></td>
+		<td> <input type="radio" value="WNI" <?php if (!strcmp($row['golongan'], "WNI")) {echo "CHECKED";
+			# code...
+		};?> name="golongan" required="required">WNI
+<input type="radio" value="WNA" <?php if (!strcmp($row['golongan'], "WNA")) {echo "CHECKED";
+			# code...
+		};?> name="golongan" required="required">WNA</td>
 	</tr>
 	<tr>
 		<td></td>

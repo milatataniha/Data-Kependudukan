@@ -108,7 +108,7 @@ $dita=mysqli_query($conn,$query);
 		<td>Gender</td>
 		<td> </td>
 		<td> <input type="radio" value="L" name="gender" required="required" >Laki-laki
-<input type="radio" value="P" name="gender" required="" >Perempuan</td>
+<input type="radio" value="P" name="gender" required="required" >Perempuan</td>
 	</tr>
 	<tr>
 		<td>Alamat </td>
@@ -123,7 +123,8 @@ $dita=mysqli_query($conn,$query);
 	<tr>
 		<td>Golongan </td>
 		<td> </td>
-		<td><input type="text" class="form-control" name="golongan" required="required"></td>
+		<td> <input type="radio" value="WNI" name="golongan" required="required" >WNI
+<input type="radio" value="WNA" name="golongan" required="required" >WNA</td>
 	</tr>
 	<tr>
 		<td><button type="submit" class="btn btn-outline-secondary"><i class = "material-icons">bookmark</i>Save</button></td>
